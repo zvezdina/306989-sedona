@@ -52,7 +52,7 @@
                         <fieldset class="choose-cost">
                              <legend>Стоимость в сутки (P):</legend>
                                 <input type="range" min="0" max="3000" step="1" value="2700"> 
-                                <a class="show" href="#">Показать</a> <!-- как это связать с блоком ниже?Значения ползунка приведены в виде таблицы, как это сделать?-->
+                                <button class="show" type="button">Показать</button> <!-- как это связать с блоком ниже?Значения ползунка приведены в виде таблицы, как это сделать?-->
                         </fieldset>
                     </form>
                 </section>
@@ -61,15 +61,15 @@
                        <h3>Найдено: 3</h3><!-- все слова с тегом h3  выглядят одинаково,я могу же использовать это на всех страницах разметки макета?-->
                        <ul class="result-sorting">
                         Сортировка:
-                          <li class="price">по цене</li>
-                	      <li class="type">по типу</li>
-                	      <li class="rating">по рейтингу</li>
+                          <li><a class="price" href="#">по цене</a></li>
+                	      <li><a class="type" href="#">по типу</a></li>
+                	      <li><a class="rating" href="#">по рейтингу</a></li>
                 	   </ul>
                 	   <a href="#">&#9650;</a>
                 	   <a href="#">&#9660;</a>
                 	</div>
-                    <ul class="result-examples">
-                       <li class="Amara"> 
+                    <div class="result-examples">
+                       <div class="Amara"> 
                           <img src="http://placehold.it/150x100">
                           <h3>Amara resort & spa</h3>
                           <p>Гостиница</p>
@@ -78,10 +78,10 @@
                           <a class="book-btn" href="#">Забронировать</a>
                           <img src="http://placehold.it/150x100"> <!--звезды-->
                           <div class="estimate">
-                          	 <p>Рейтинг:8,5</p>
+                          	 <p>Рейтинг: 8,5</p>
                           </div>
-                       </li>
-                       <li class="Desert">
+                       </div>
+                       <div class="Desert">
                           <img src="http://placehold.it/150x100">
                           <h3>Desert quail inn</h3>
                           <p>Мотель</p>
@@ -90,10 +90,10 @@
                           <a class="book-btn" href="#">Забронировать</a>
                           <img src="http://placehold.it/150x100"> <!--звезды-->
                           <div class="estimate">
-                          	  <p>Рейтинг:8,9</p>
+                          	  <p>Рейтинг: 8,9</p>
                           </div>
-                        </li>
-                       <li class="Villas">
+                        </div>
+                       <div class="Villas">
                           <img src="http://placehold.it/150x100">
                           <h3>Desert quail inn</h3>
                           <p>Мотель</p>
@@ -102,10 +102,10 @@
                           <a class="book-btn" href="#">Забронировать</a>
                           <img src="http://placehold.it/150x100"> <!--звезды-->
                           <div class="estimate">
-                          	  <p>Рейтинг:8,9</p>
+                          	  <p>Рейтинг:  8,9</p>
                           </div>
-                       </li>
-                    </ul>
+                       </div>
+                    </div>
                 </section>
             </main>
              <footer class="footer">
