@@ -3,6 +3,8 @@
     <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     </head>
         <body>
             <header class="main-header">
@@ -16,7 +18,7 @@
                                 <a href="#">Фото и видео</a>
                             </li>
                             <li>
-                                <a href="#"><img src="http://placehold.it/150x100"></a>
+                                <a href="#"><img src="img/logo.png" width="67" height="56" alt="Седона"></a>
                             </li>
                             <li>
                                 <a href="#">Карта штата</a>
@@ -30,10 +32,10 @@
             </header>
             <main class="container">
                 <div class="banner">
-                    <img src="http://placehold.it/150x100">
+                    <img src="img/introduce.png" width="768" height="513" alt="Седона">
                 </div>
                 <div class="information">
-                    <h2> Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
+                    <h3> Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
                     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
                 </div>
                 <section class="reason">
@@ -42,29 +44,29 @@
                         <p>- №1 -</p>
                         <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
-                        <figure class="town"><!--можно просто два тега без наполнения?-->
+                        <figure class="town">
                         </figure>
                 </section>
                 <section  class="features">
                     <div class="features-information">
-                        <img src="http://placehold.it/150x100">
+                        <img src="img/house.png" width="75" height="72" alt="Жилье">
                         <h3>Жилье</h3>
                         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </div>
                     <div class="features-information">
-                        <img src="http://placehold.it/150x100">
+                        <img src="img/food.png" width="74" height="70" alt="Еда">
                         <h3>Еда</h3>
                         <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
                     </div>
                     <div class="features-information">
-                        <img src="http://placehold.it/150x100">
+                        <img src="img/present.png" width="64" height="76" alt="Еда">
                         <h3>Сувениры</h3>
                         <p>Не только китайского, но и местного  производства!</p>
                     </div>
                 </section>
                 <section class="reason">
                     <div class="reason-description">
-                        <figure class="town"><!--можно просто два тега без наполнения?-->
+                        <figure class="town">
                         </figure>
                         <h3>Там есть  мост дьявола</h3>
                         <p>- №2 -</p>
@@ -97,20 +99,19 @@
                     <div class="reservation-search">
                     	 <form class="search-entry">
                     	    <input type="date" name="calendar" value="24 апреля 2016" id="in">
-                    	    <!---Как делать календарь?name 
-                    	    одинаковые в инпутах?-->
+                            <label for="in">Дата заезда:</label>
                     	    <input type="date" name="calendar" value="4 июля 2016" id="out">
+                            <label for="out">Дата выезда:</label>
                             <span>-<input type="text" placeholder="2" name="count" id="growup"></span>
+                            <label for="growup">Взрослые</label>
                             <span>+<input type="text" placeholder="2" name="count" id="growup"></span>
-                    	    <label for="in">Дата заезда:</label>
-                    	    <label for="out">Дата выезда:</label>
-                    	    <label for="growup">Взрослые</label>
                     	    <label for="children">Дети</label>
                     	 </form>
                     	 <input type="submit" value="Найти">
                     </div>
                 </section>
                 <section class="map">
+                <img src="img/map.jpg" width="1200" height="593" alt="Карта">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=qliVaKmW7gPIW-zLP3ow55cF83U2W939&amp;width=1020&amp;height=720&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
                 </section>
             </main>
@@ -120,13 +121,13 @@
                       #VISITSEDONA
                      </section>
                      <section class="footer-social">
-                      <a class="vk" href="#"></a>
-                      <a class="facebook" href="#"></a>
-                      <a class="youtube" href="#"></a>
+                      <a class="twitter" href="#"><img src="img/twiter.png" width="17" height="15" alt="Твиттер"></a>
+                      <a class="facebook" href="#"><img src="img/facebook.png" width="10" height="19" alt="Facebook"></a>
+                      <a class="youtube" href="#"><img src="img/youtube.png" width="20" height="16" alt="Youtube"></a>
                      </section>
                      <section class="footer-website">
                         WebSite
-                        <img src="http://placehold.it/150x100">
+                        <img src="img/htmlacademy.png" width="113" height="39" alt="Htmlacademy">
                      </section>
                 </div>
             </footer>

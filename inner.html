@@ -3,6 +3,8 @@
     <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     </head>
         <body>
             <header class="main-header">
@@ -16,7 +18,7 @@
                                 <a href="#">Фото и видео</a>
                             </li>
                             <li>
-                                <a href="#"><img src="http://placehold.it/150x100"></a>
+                                <a href="#"><img src="img/logo.png" width="67" height="56" alt="Седона"></a>
                             </li>
                             <li>
                                 <a href="#">Карта штата</a>
@@ -33,74 +35,75 @@
                   	<form  action="#" method="post">
                         <fieldset class="choose-infrastructure">
                              <legend>Инфраструктура</legend>
-                                 <input type="checkbox" name="infrastructure" value="Swimmingpool" id="Swim" checked> <!--название id может совпадать с value? и класса с name?-->
-                                 <input type="checkbox" name="infrastructure" value="Parking" id="Parking">
-                                 <input type="checkbox" name="infrastructure" value="Wifi" id="Wifi">
+                                 <input type="checkbox" name="infrastructure" value="Swimmingpool" id="Swim" checked> 
                                  <label for="Swim">Бассейн</label>
+                                 <input type="checkbox" name="infrastructure" value="Parking" id="Parking">
                                  <label for="Parking">Парковка</label>
+                                 <input type="checkbox" name="infrastructure" value="Wifi" id="Wifi">
                                  <label for="Wifi">Wi-fi</label>
                         </fieldset>
                         <fieldset class="choose-house">
                               <legend>Тип жилья</legend>
                                  <input type="checkbox" name="house" value="Hotel" id="Hotel" checked>
-                                 <input type="checkbox" name="house" value="Motel" id="Motel" checked>
-                                 <input type="checkbox" name="house" value="Apartments" id="Apartments" checked>
                                  <label for="Hotel">Гостиницы</label>
+                                 <input type="checkbox" name="house" value="Motel" id="Motel" checked>
                                  <label for="Motel">Мотель</label>
+                                 <input type="checkbox" name="house" value="Apartments" id="Apartments" checked>
                                  <label for="Apartments">Апартаменты</label>
                         </fieldset>
                         <fieldset class="choose-cost">
                              <legend>Стоимость в сутки (P):</legend>
+                             <div>от 0</div><span></span><div>до 3000</div>
                                 <input type="range" min="0" max="3000" step="1" value="2700"> 
-                                <button class="show" type="button">Показать</button> <!-- как это связать с блоком ниже?Значения ползунка приведены в виде таблицы, как это сделать?-->
+                                <button class="show" type="button">Показать</button> 
                         </fieldset>
                     </form>
                 </section>
                 <section class="result">
                     <div class="result-options">  
-                       <h3>Найдено: 3</h3><!-- все слова с тегом h3  выглядят одинаково,я могу же использовать это на всех страницах разметки макета?-->
+                       <h3>Найдено: 3</h3>
                        <ul class="result-sorting">
                         Сортировка:
                           <li><a class="price" href="#">по цене</a></li>
-                	      <li><a class="type" href="#">по типу</a></li>
-                	      <li><a class="rating" href="#">по рейтингу</a></li>
-                	   </ul>
-                	   <a href="#">&#9650;</a>
-                	   <a href="#">&#9660;</a>
+                	        <li><a class="type" href="#">по типу</a></li>
+                	        <li><a class="rating" href="#">по рейтингу</a></li>
+                	     </ul>
+                	   <a href="#"><img src="img/up-gray.png" width="11" height="10" alt="up"></a>
+                	   <a href="#"><img src="img/down-gray.png" width="11" height="10" alt="down"></a>
                 	</div>
                     <div class="result-examples">
                        <div class="Amara"> 
-                          <img src="http://placehold.it/150x100">
+                          <img src="img/amara.jpg" width="135" height="90" alt="Amara">
                           <h3>Amara resort & spa</h3>
                           <p>Гостиница</p>
                           <p>от 3500 р.</p>
                           <a class="more-btn" href="#">Подробнее</a>
                           <a class="book-btn" href="#">Забронировать</a>
-                          <img src="http://placehold.it/150x100"> <!--звезды-->
+                          <img src="img/fourstars.png" width="89" height="17" alt="stars">
                           <div class="estimate">
                           	 <p>Рейтинг: 8,5</p>
                           </div>
                        </div>
                        <div class="Desert">
-                          <img src="http://placehold.it/150x100">
+                          <img src="img/desert.jpg" width="135" height="90" alt="Desert">
                           <h3>Desert quail inn</h3>
                           <p>Мотель</p>
                           <p>от 2000 р.</p>
                           <a class="more-btn" href="#">Подробнее</a>
                           <a class="book-btn" href="#">Забронировать</a>
-                          <img src="http://placehold.it/150x100"> <!--звезды-->
+                          <img src="img/threestars.png" width="65" height="17" alt="stars">
                           <div class="estimate">
                           	  <p>Рейтинг: 8,9</p>
                           </div>
                         </div>
                        <div class="Villas">
-                          <img src="http://placehold.it/150x100">
+                          <img src="img/villas.jpg" width="135" height="90" alt="Villas">
                           <h3>Desert quail inn</h3>
                           <p>Мотель</p>
                           <p>от 2000 р.</p>
                           <a class="more-btn" href="#">Подробнее</a>
                           <a class="book-btn" href="#">Забронировать</a>
-                          <img src="http://placehold.it/150x100"> <!--звезды-->
+                          <img src="img/twostars.png" width="42" height="17" alt="stars">
                           <div class="estimate">
                           	  <p>Рейтинг:  8,9</p>
                           </div>
@@ -114,13 +117,13 @@
                       #VISITSEDONA
                      </section>
                      <section class="footer-social">
-                      <a class="vk" href="#"></a>
-                      <a class="facebook" href="#"></a>
-                      <a class="youtube" href="#"></a>
+                      <a class="twitter" href="#"><img src="img/twiter.png" width="17" height="15" alt="Твиттер"></a>
+                      <a class="facebook" href="#"><img src="img/facebook.png" width="10" height="19" alt="Facebook"></a>
+                      <a class="youtube" href="#"><img src="img/youtube.png" width="20" height="16" alt="Youtube"></a>
                      </section>
                      <section class="footer-website">
                         WebSite
-                        <img src="http://placehold.it/150x100">
+                        <img src="img/htmlacademy.png" width="113" height="39" alt="Htmlacademy">
                      </section>
                 </div>
             </footer>
