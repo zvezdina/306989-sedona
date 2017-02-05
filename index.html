@@ -35,12 +35,14 @@
                     <img src="img/introduce.jpg" width="1200" height="564" alt="Седона">
                 </div>
                 <div class="information">
-                    <h3> Седона-небольшой городок в Аризоне, заслуживающий большего!</h3>
+                <!--это случайно не лид?Седона-небольшой городок...В <p><b></b></b>?
+                У меня вопросы по заголовкам Жилье,Еда...Небольшая площадь, мало туристов это h3, а Заинтересовались-это h2 или наоборот?-->
+                    <h2> Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
                     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
                 </div>
                 <section class="reason">
                     <div class="reason-description">
-                        <h3>Настоящий  городок</h3>
+                        <h2>Настоящий  городок</h2>
                         <p>- №1 -</p>
                         <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
@@ -50,17 +52,17 @@
                 <section  class="features">
                     <div class="features-information">
                         <img src="img/house.png" width="75" height="72" alt="Жилье">
-                        <h3>Жилье</h3>
+                        <h2>Жилье</h2>
                         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </div>
                     <div class="features-information">
                         <img src="img/food.png" width="74" height="70" alt="Еда">
-                        <h3>Еда</h3>
+                        <h2>Еда</h2>
                         <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
                     </div>
                     <div class="features-information">
                         <img src="img/present.png" width="64" height="76" alt="Еда">
-                        <h3>Сувениры</h3>
+                        <h2>Сувениры</h2>
                         <p>Не только китайского, но и местного  производства!</p>
                     </div>
                 </section>
@@ -68,44 +70,52 @@
                     <div class="reason-description">
                         <figure class="town">
                         </figure>
-                        <h3>Там есть  мост дьявола</h3>
+                        <h2>Там есть  мост дьявола</h2>
                         <p>- №2 -</p>
                         <p>Да, по нему можно пройтись! Если, конечно,  вы осмелитесь</p>
                     </div> 
                 </section>
                 <section  class="features">
                     <div class="features-information">
-                        <h3>Небольшая площадь</h3>
+                        <h2>Небольшая площадь</h2>
                         <p>- №3 -</p>
                         <p>Все достопримечательности находятся очень близко</p>
                     </div>
                     <div class="features-information">
-                        <h3>Красивая дорога</h3>
+                        <h2>Красивая дорога</h2>
                         <p>- №4 -</p>
                         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </div>
                     <div class="features-information">
-                        <h3>Мало туристов</h3>
+                        <h2>Мало туристов</h2>
                         <p>- №5 -</p>
                         <p>Большинство едет в Гранд-Каньон и толпиться там</p>
                     </div>
                 </section>
                 <section class="reservation">
                     <div class="reservation-information">
-                        <h2>Заинтересовались?</h2>
+                        <h3>Заинтересовались?</h3>
                         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     </div>
                     <button class="btn" type="button">Поиск гостиницы в Седоне</button>
                     <div class="reservation-search">
                     	 <form class="search-entry">
-                    	    <input type="date" name="calendar" value="24 апреля 2016" id="in">
                             <label for="in">Дата заезда:</label>
-                    	    <input type="date" name="calendar" value="4 июля 2016" id="out">
+                    	    <input type="date" name="calendar" value="come" id="in">
                             <label for="out">Дата выезда:</label>
-                            <span>-<input type="text" placeholder="2" name="count" id="growup"></span>
+                    	    <input type="date" name="calendar" value="away" id="out">
                             <label for="growup">Взрослые</label>
-                            <span>+<input type="text" placeholder="2" name="count" id="growup"></span>
-                    	    <label for="children">Дети</label>
+                            <div class="search-man">
+                               <span>-</span>
+                               <input type="text" placeholder="2" name="count" id="growup">
+                               <span>+</span>
+                            </div>
+                            <label for="children">Дети</label>
+                            <div class="search-man">
+                               <span>-</span>
+                               <input type="text" placeholder="2" name="count" id="children">
+                               <span>+</span>
+                    	    </div>
                     	 </form>
                     	 <input type="submit" value="Найти">
                     </div>

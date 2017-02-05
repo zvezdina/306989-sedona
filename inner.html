@@ -32,28 +32,51 @@
             </header>
             <main class="container">
                 <section class="choose">
-                  	<form  action="#" method="post">
+                  	<form  action="#" method="get">
                         <fieldset class="choose-infrastructure">
                              <legend>Инфраструктура</legend>
-                                 <input type="checkbox" name="infrastructure" value="Swimmingpool" id="Swim" checked> 
-                                 <label for="Swim">Бассейн</label>
-                                 <input type="checkbox" name="infrastructure" value="Parking" id="Parking">
-                                 <label for="Parking">Парковка</label>
-                                 <input type="checkbox" name="infrastructure" value="Wifi" id="Wifi">
-                                 <label for="Wifi">Wi-fi</label>
+                                <ul>
+                                    <li>
+                                       <input type="checkbox" name="infrastructure" value="Swimmingpool" id="Swim" checked> 
+                                       <label for="Swim">Бассейн</label>
+                                    </li>
+                                    <li>
+                                       <input type="checkbox" name="infrastructure" value="Parking" id="Parking">
+                                       <label for="Parking">Парковка</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="infrastructure" value="Wifi" id="Wifi">
+                                        <label for="Wifi">Wi-fi</label>
+                                    </li>
+                                </ul>
                         </fieldset>
                         <fieldset class="choose-house">
                               <legend>Тип жилья</legend>
-                                 <input type="checkbox" name="house" value="Hotel" id="Hotel" checked>
-                                 <label for="Hotel">Гостиницы</label>
-                                 <input type="checkbox" name="house" value="Motel" id="Motel" checked>
-                                 <label for="Motel">Мотель</label>
-                                 <input type="checkbox" name="house" value="Apartments" id="Apartments" checked>
-                                 <label for="Apartments">Апартаменты</label>
+                                 <ul>
+                                    <li>
+                                       <input type="checkbox" name="house" value="Hotel" id="Hotel" checked>
+                                       <label for="Hotel">Гостиницы</label>
+                                    </li>
+                                    <li>
+                                       <input type="checkbox" name="house" value="Motel" id="Motel" checked>
+                                       <label for="Motel">Мотель</label>
+                                     </li>
+                                       <input type="checkbox" name="house" value="Apartments" id="Apartments" checked>
+                                      <label for="Apartments">Апартаменты</label>
+                                     <li>
+                                  </ul>
                         </fieldset>
                         <fieldset class="choose-cost">
                              <legend>Стоимость в сутки (P):</legend>
-                             <div>от 0</div><span></span><div>до 3000</div>
+                             <!--В лекции говорится про поля input type="text"
+                              <input type="text" name="range" value="0" placeholder="0">
+                             -->
+                             <div>от 0</div><span></span>
+                             <!--В лекции говорится про поля input type="text"
+                              <input type="text" name="range" value="3000" placeholder="3000">
+                             -->
+                             <div>до 3000</div>
+                             <!--и про набор divов-->
                                 <input type="range" min="0" max="3000" step="1" value="2700"> 
                                 <button class="show" type="button">Показать</button> 
                         </fieldset>
@@ -61,9 +84,9 @@
                 </section>
                 <section class="result">
                     <div class="result-options">  
-                       <h3>Найдено: 3</h3>
+                       <h2>Найдено: 3</h2>
+                       <p>Сортировка:</p>
                        <ul class="result-sorting">
-                        Сортировка:
                           <li><a class="price" href="#">по цене</a></li>
                 	        <li><a class="type" href="#">по типу</a></li>
                 	        <li><a class="rating" href="#">по рейтингу</a></li>
@@ -72,40 +95,58 @@
                 	   <a href="#"><img src="img/down-gray.png" width="11" height="10" alt="down"></a>
                 	</div>
                     <div class="result-examples">
-                       <div class="Amara"> 
-                          <img src="img/amara.jpg" width="135" height="90" alt="Amara">
-                          <h3>Amara resort & spa</h3>
-                          <p>Гостиница</p>
-                          <p>от 3500 р.</p>
+                       <div class="search-item"> 
+                          <figure class="hotel">
+                             <img src="img/amara.jpg" width="135" height="90" alt="Amara">
+                          </figure>
+                          <div class="description">
+                             <h2>Amara resort & spa</h2>
+                             <p>Гостиница</p>
+                             <span>от 3500 р.</span>
+                          </div>
                           <a class="more-btn" href="#">Подробнее</a>
                           <a class="book-btn" href="#">Забронировать</a>
-                          <img src="img/fourstars.png" width="89" height="17" alt="stars">
+                          <div class="stars">
+                             <img src="img/fourstars.png" width="89" height="17" alt="stars">
+                          </div>
                           <div class="estimate">
-                          	 <p>Рейтинг: 8,5</p>
+                          	  Рейтинг: 8,5
                           </div>
                        </div>
-                       <div class="Desert">
-                          <img src="img/desert.jpg" width="135" height="90" alt="Desert">
-                          <h3>Desert quail inn</h3>
-                          <p>Мотель</p>
-                          <p>от 2000 р.</p>
+                       <div class="search-item">
+                          <figure class="hotel">
+                             <img src="img/desert.jpg" width="135" height="90" alt="Desert">
+                          </figure>
+                          <div class="description">
+                             <h2>Desert quail inn</h2>
+                             <p>Мотель</p>
+                             <span>от 2000 р.</span>
+                          </div>   
                           <a class="more-btn" href="#">Подробнее</a>
                           <a class="book-btn" href="#">Забронировать</a>
-                          <img src="img/threestars.png" width="65" height="17" alt="stars">
+                          <div class="stars">
+                             <img src="img/threestars.png" width="65" height="17" alt="stars">
+                          </div>
                           <div class="estimate">
-                          	  <p>Рейтинг: 8,9</p>
+                          	  Рейтинг: 8,9
                           </div>
                         </div>
-                       <div class="Villas">
-                          <img src="img/villas.jpg" width="135" height="90" alt="Villas">
-                          <h3>Desert quail inn</h3>
-                          <p>Мотель</p>
-                          <p>от 2000 р.</p>
+                       <div class="search-item">
+                          <figure class="hotel">
+                             <img src="img/villas.jpg" width="135" height="90" alt="Villas">
+                          </figure>
+                          <div class="description">
+                             <h2>Desert quail inn</h2>
+                             <p>Мотель</p>
+                             <span>от 2000 р.</span>
+                          </div>  
                           <a class="more-btn" href="#">Подробнее</a>
                           <a class="book-btn" href="#">Забронировать</a>
-                          <img src="img/twostars.png" width="42" height="17" alt="stars">
+                          <div class="stars">
+                             <img src="img/twostars.png" width="42" height="17" alt="stars">
+                          </div>
                           <div class="estimate">
-                          	  <p>Рейтинг:  8,9</p>
+                          	  Рейтинг:  8,9
                           </div>
                        </div>
                     </div>
