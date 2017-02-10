@@ -6,6 +6,303 @@ body {
 	font-family: PT Sans;
 	color:#000000;
 	font-weight: normal;
+  font-size: 14 px;
+  background-color: #f2f2f2;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  min-height: 564px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  outline: 1px solid #f14e4e;
+}
+
+.main-navigation {
+  width: 1200px;
+  min-height: 56px;
+  padding: 0 73px;
+}
+
+.main-navigation  ul{
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-navigation li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  margin-right: 136px;
+}
+
+.main-navigation a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.main-navigation li:last-child {
+  margin-right: 0;
+}
+
+.banner {
+  margin: 0 auto ;
+}
+.about {
+  min-height: 2078px;
+  
+}
+
+.information {
+  width: 1200px;
+  min-height: 151px;  
+  outline: 1px solid #70c974;
+}
+
+.information h2 {
+   width: 440px;
+   margin: 0 auto;
+   padding: 63px 0 32px;
+   text-align: center;
+   line-height: 26px;
+}
+
+.information p {
+   width: 491px;
+   margin: 0 auto;
+   padding-bottom: 51px;
+   line-height: 26px;
+   text-align: center;
+}
+.reason {
+  min-height: 256px;
+  outline: 1px solid #4281d7;
+}
+
+.reason-description {
+  width: 400px;
+  min-height: 256px;
+  outline: 1px solid #828fa0;
+  background-color: #81b3d2;
+  padding-top: 56px;
+  float: left;
+}
+/* в итоге у меня все равно вылет, хотя и картинка (по высоте 256px) и блок с информацией (по высоте 256px). почему??  */
+.town {
+  margin: 0;
+  float: right;
+}
+.reason-description h3 {
+  width: 175px;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  margin: 0 auto;
+  padding:0 10px 22px;
+  text-align: center;
+}
+
+.reason-description p {
+  width: 280px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+}
+
+.reason-description p:last-child {
+  padding-bottom: 0;
+}
+
+.features {
+  min-height: 330px;
+   font-size: 0px;
+   text-align: center;
+}
+
+.features-information {
+  display: inline-block;
+  margin-right: 74px;
+  outline: 1px solid #76c73f;
+}
+
+.indent {
+  padding-top: 60px;
+}
+
+.features-information h4 {
+  width: 107px;
+  line-height: 21px;
+  margin: 0 auto;
+  padding: 32px 10px 27px;
+}
+
+.features-information p {
+  width: 292px;
+  line-height: 21px;
+  padding: 0 10px;
+}
+
+.features-information:last-child {
+  margin-right: 0;
+}
+
+.around {
+  float: left;
+} 
+
+ .round {
+  float: right;
+}
+
+.two {
+  min-height: 256px;
+  background-color: #eeeeee;
+}
+
+.features-information h3 {
+  line-height: 21px;
+  margin: 51px 0 29px;
+}
+
+.reservation-information {
+ padding-top: 54px;
+}
+
+.reservation h5 {
+  width: 338px;
+  margin: 0 auto 27px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.reservation p {
+  width: 474px;
+  margin: 0 auto 42px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.reservation-search {
+  width: 568px;
+  min-height: 481px;
+  margin: 0 auto;
+}
+
+.reservation button {
+  width: 568px;
+  min-height: 86px;
+  padding: 0;
+  border-width: 0;
+}
+
+.btn {
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+  background-color: #766357;
+}
+
+.search-entry {
+  width: 568px;
+  min-height: 395px;
+}
+
+.search-entry form {
+  width: 458px;
+  min-height: 285px;
+  margin: 0 auto;
+  padding-top: 55px;
+
+}
+
+.search-entry label {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+
+input[type="date"] {
+  width: 346px;
+  min-height: 38px;
+  background-color: #f2f2f2;
+  border: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+ 
+.search-man {
+  font-size: 0px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  margin: 0 53px 54px 0;
+}
+
+.search-man span {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #a9a9a9;
+
+}
+/* не срабатывает св-во ниже почему-то*/
+.search-man :last-child {
+  margin-right: 0;
+}
+/* цвет букв не меняет на черный*/
+input[type="text"] {
+  width: 114px;
+  min-width: 38px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: 0;
+  padding: 0;
+}
+
+
+input[type="submit"] {
+  width: 458px;
+  min-height: 58px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 26px;
+  border: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+
 }
 
 h2{
@@ -14,9 +311,75 @@ h2{
   text-transform: uppercase;
 
 }
+
 h3{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h4{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h5{
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.footer {
+  width: 1200px;
+  min-height: 120px;
+  padding-top: 36px;
+}
+
+.footer-hashtag {
+ float:left;
+}
+
+.footer-hashtag p {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 26px;
+  vertical-align: center;
+  margin: 15px 256px 0 65px;
+}
+
+.footer-social {
+  float:left;
+ text-align: center;
+  vertical-align: center;
+}
+
+.square {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+}
+
+.square a {
+  margin: 0 auto;
+}
+
+.footer-website {
+  float: right;
+  
+}
+
+.footer-website span {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  display: inline-block;
+}
+
+.footer-website img {
+  margin: 5px 103px 0 8px;
+}
