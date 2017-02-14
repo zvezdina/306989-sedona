@@ -24,6 +24,7 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
   color: #000000;
+  box-shadow: 0 0 20px 5px #dbdbdb;
 } 
 
 .main-navigation {
@@ -54,7 +55,6 @@ body {
 }
 
 .main-navigation a {
-  display: block;
   color: #000000;
   text-decoration: none;
 }
@@ -77,7 +77,7 @@ body {
   text-align: right;
 }
 
-.current {
+.main-navigation .current {
   color: #766357;
 }
 
@@ -159,13 +159,14 @@ h3{
   display: inline-block;
   text-align: center;
   vertical-align: top;
+  padding-top: 50px;
 }
 
 .features-information span {
    display: block;
 }
 .home {
-  margin: 54px auto 33px;
+  margin: 0 auto 33px;
   width: 75px;
   height: 72px;
   background: url("../img/sprites.png") no-repeat;
@@ -173,7 +174,7 @@ h3{
 }
 
 .food {
-  margin: 56px auto 33px;
+  margin: 0 auto 33px;
   width: 74px;
   height: 70px;
   background: url("../img/sprites.png") no-repeat;
@@ -181,7 +182,7 @@ h3{
 }
 
 .present {
-  margin: 50px auto 33px;
+  margin: 0 auto 33px;
   width: 64px;
   height: 76px;
   background: url("../img/sprites.png") no-repeat;
@@ -218,26 +219,27 @@ h4{
 
 .two {
   background-color: #eeeeee;
-  padding-top: 55px;
+
 }
 
 .features-information h3 {
+  width: 120px;
   line-height: 21px;
-  margin: 0 auto 26px;
+  margin: 0 auto 24px;
 }
 
 .two .features-information p {
   line-height: 21px;
-  margin: 0 auto 25px;
+  margin: 0 auto 24px;
   padding:0;
 }
 
 .two .features-information p:last-child {
-  margin-bottom: 66px;
+  margin-bottom: 53px;
 }
 
 .reservation-information {
- padding-top: 59px;
+ padding-top: 58px;
 }
 
 h5{
@@ -249,7 +251,7 @@ h5{
 .reservation h5 {
   width: 338px;
   line-height: 30px;
-  margin: 0 auto 32px;
+  margin: 0 auto 33px;
   padding: 0 10px;
   text-align: center;
 }
@@ -262,6 +264,7 @@ h5{
 }
 
 .reservation-search {
+  position: relative;
   width: 568px;
   margin: 0 auto;
 }
@@ -282,15 +285,18 @@ h5{
 }
 
 .search-entry {
+  position: absolute;
+  background: #ffffff;
   width: 568px;
-  min-height: 395px;
+  z-index: 10;
+  box-shadow: 0 3px 15px 1px #b0b0af;
 }
+
 
 .search-entry form {
   width: 458px;
-  min-height: 285px;
   margin: 0 auto;
-  padding-top: 55px;
+  padding: 55px 0 55px;
 
 }
 
@@ -308,7 +314,16 @@ input[type="date"] {
   background-color: #f2f2f2;
   border: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+}
+
+input[type="date"]:hover {
+  background-color: #ebebeb;
+}
+
+input[type="date"]:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
  
 .search-man {
@@ -316,7 +331,7 @@ input[type="date"] {
   display: inline-block;
   text-align: center;
   vertical-align: center;
-  margin: 0 53px 54px 0;
+  margin: 0 45px 54px 0;
 }
 
 .search-man span {
@@ -326,7 +341,7 @@ input[type="date"] {
   color: #a9a9a9;
 }
 
-.search-man :last-child {
+.search-man:last-child {
   margin-right: 0;
 }
 
@@ -358,22 +373,36 @@ input[type="submit"] {
   padding: 0;
 }
 
+input[type="submit"]:hover {
+  background-color: #669ec0;
+}
+
+input[type="submit"]:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
 .map {
   background: url("../img/map.jpg") no-repeat center;
-  margin-bottom: - 120px;
+  margin-bottom: -120px;
 }
 
 .footer {
   position: relative;
   width: 1200px;
   min-height: 120px;
-  padding-top: 36px;
+  font-size:0;
   z-index: 1;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.8);
 }
 
 .footer-hashtag {
- float:left;
+  display: inline-block;
+  width: 400px;
+  vertical-align: middle;
+  text-align: center; 
+  font-size:0;
+  padding-top: 48px;
 }
 
 .footer-hashtag p {
@@ -381,44 +410,115 @@ input[type="submit"] {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 26px;
-  vertical-align: center;
-  margin: 15px 256px 0 65px;
+  margin: 0;
+
 }
 
 .footer-social {
-  float:left;
- text-align: center;
-  vertical-align: center;
-}
+  display: inline-block;
+  font-size:0;
+  width: 400px;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 36px;
+  }
 
 .social-btn {
   display: inline-block;
   width: 46px;
   height: 48px;
   font-size: 0;
+  text-align: center;
   vertical-align: middle;
+  margin-right: 6px;
   background: #81b3d2 url("../img/sprites.png") no-repeat center;
 }
 
+.social-btn:hover {
+  background: #669ec0 url("../img/sprites.png") no-repeat center;
+}
+
+.social-btn:active {
+  background: #5496bd url("../img/sprites.png") no-repeat center;
+}
+
+.social-btn:last-child {
+  margin-right: 0;
+}
+
 .twitter {
-  background-position: -95px -100px;
+  background-position: -2px -102px;
+}
+
+.twitter:hover {
+  background-position: -2px -102px;
+}
+
+.twitter:active {
+  background-position: -2px -102px;
+  opacity: 0.3;
 }
 
 .facebook {
-  background-position: -50px -102px ;
- 
-}
-.footer-website {
-  display: inline-block;
-  vertical-align: middle;
-  width: 113px;
-  height: 39px;
-  background: url("../img/sprites.png") no-repeat;
-  background-position: -170px -103px;
-}
-.footer-website span {
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 30px;
+  background-position: -50px -102px;
 }
 
+.facebook:hover {
+  background-position: -50px -102px;
+}
+
+.facebook:active {
+  background-position: -50px -102px;
+  opacity: 0.3;
+}
+
+.youtube {
+  background-position: -300px -150px;
+}
+
+.youtube:hover {
+  background-position: -300px -150px;
+}
+
+.youtube:active {
+  background-position: -300px -150px;
+  opacity: 0.3;
+}
+
+.footer-website {
+  width: 400px;
+  display: inline-block;
+  font-size: 0;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 41px;
+}
+
+.footer-website span {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.academy {
+  display: inline-block;
+  margin: 0;
+  width: 113px;
+  height: 39px;
+  background: url("../img/sprites.png") no-repeat center;
+  background-position: -170px -103px;
+}
+
+.academy:hover {
+  width: 113px;
+  height: 39px;
+  background: url("../img/sprites.png") no-repeat center;
+  background-position: -167px -155px ;
+}
+
+.academy:active {
+  width: 113px;
+  height: 39px;
+  background: url("../img/sprites.png") no-repeat center;
+  background-position: -165px -208px ;
+}
