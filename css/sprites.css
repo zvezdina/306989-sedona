@@ -1,0 +1,202 @@
+.house, .food, .present, .calendar, .calendar-black, .calendar-blue, .minus-black, .minus-blue, .minus-gray, .plus-black, .plus-blue, .plus-gray, .twiter, .facebook, .twiter, .htmlacademy, .htmlacademy-blue, .htmlacademy-gray, .checked, .checked-gray, .nochecked, .nochecked-gray, .slider-blue, .slider-gray, .down-black, .down-blue, .down-gray, .up-black, .up-blue, .up-gray, .fourstars, .threestars, .twostars{
+	background: url(sprites.png) no-repeat;
+}
+
+.house{
+	background-position: -13px -15px ;
+	width: 75px;
+	height: 72px;
+}
+
+.food{
+	background-position: -110px -17px ;
+	width: 74px;
+	height: 70px;
+}
+
+.present{
+	background-position: -213px -12px ;
+	width: 64px;
+	height: 76px;
+}
+
+.calendar{
+	background-position: -310px -15px ;
+	width: 21px;
+	height: 22px;
+}
+
+.calendar-black{
+	background-position: -363px -15px ;
+	width: 21px;
+	height: 22px;
+}
+
+.calendar-blue{
+	background-position: -412px -15px ;
+	width: 21px;
+	height: 22px;
+}
+
+.minus-black{
+	background-position: -367px -72px ;
+	width: 12px;
+	height: 3px;
+}
+
+.minus-blue{
+	background-position: -417px -72px ;
+	width: 12px;
+	height: 3px;
+}
+
+.minus-gray{
+	background-position: -315px -72px ;
+	width: 12px;
+	height: 3px;
+}
+
+.plus-black{
+	background-position: -370px -115px ;
+	width: 11px;
+	height: 11px;
+}
+
+.plus-blue{
+	background-position: -418px -118px ;
+	width: 11px;
+	height: 11px;
+}
+
+.plus-gray{
+	background-position: -316px -119px ;
+	width: 11px;
+	height: 11px;
+}
+
+.twiter{
+	background-position: -17px -117px ;
+	width: 17px;
+	height: 15px;
+}
+
+.facebook{
+	background-position: -67px -113px ;
+	width: 10px;
+	height: 19px;
+}
+
+.twiter{
+	background-position: -111px -115px ;
+	width: 17px;
+	height: 15px;
+}
+
+.htmlacademy{
+	background-position: -170px -103px ;
+	width: 113px;
+	height: 39px;
+}
+
+.htmlacademy-blue{
+	background-position: -167px -155px ;
+	width: 113px;
+	height: 39px;
+}
+
+.htmlacademy-gray{
+	background-position: -165px -208px ;
+	width: 113px;
+	height: 39px;
+}
+
+.checked{
+	background-position: -13px -162px ;
+	width: 26px;
+	height: 22px;
+}
+
+.checked-gray{
+	background-position: -63px -165px ;
+	width: 26px;
+	height: 22px;
+}
+
+.nochecked{
+	background-position: -13px -212px ;
+	width: 22px;
+	height: 22px;
+}
+
+.nochecked-gray{
+	background-position: -61px -213px ;
+	width: 22px;
+	height: 22px;
+}
+
+.slider-blue{
+	background-position: -110px -162px ;
+	width: 20px;
+	height: 23px;
+}
+
+.slider-gray{
+	background-position: -111px -212px ;
+	width: 20px;
+	height: 23px;
+}
+
+.down-black{
+	background-position: -24px -265px ;
+	width: 11px;
+	height: 10px;
+}
+
+.down-blue{
+	background-position: -70px -266px ;
+	width: 11px;
+	height: 10px;
+}
+
+.down-gray{
+	background-position: -121px -267px ;
+	width: 11px;
+	height: 10px;
+}
+
+.up-black{
+	background-position: -19px -319px ;
+	width: 11px;
+	height: 10px;
+}
+
+.up-blue{
+	background-position: -69px -319px ;
+	width: 11px;
+	height: 10px;
+}
+
+.up-gray{
+	background-position: -122px -319px ;
+	width: 11px;
+	height: 10px;
+}
+
+.fourstars{
+	background-position: -167px -263px ;
+	width: 89px;
+	height: 17px;
+}
+
+.threestars{
+	background-position: -169px -313px ;
+	width: 65px;
+	height: 17px;
+}
+
+.twostars{
+	background-position: -167px -365px ;
+	width: 42px;
+	height: 17px;
+}
+

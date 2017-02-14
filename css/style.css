@@ -3,10 +3,13 @@
 }
 
 body {
-	font-family: PT Sans;
-	color:#000000;
-	font-weight: normal;
-  font-size: 14 px;
+  min-width: 1200px;
+  font-weight: normal;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  /* по дополнительному параметру 25 , сказали прописывать по максимуму в боди то, что одинаково для все страницы*/
+  color:#000000;
+  text-transform: uppercase;
   background-color: #f2f2f2;
 }
 
@@ -16,156 +19,197 @@ body {
   clear: both;
 }
 
-.main-header {
-  min-height: 564px;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  outline: 1px solid #f14e4e;
-}
+  color: #000000;
+} 
 
 .main-navigation {
   width: 1200px;
-  min-height: 56px;
   padding: 0 73px;
 }
 
 .main-navigation  ul{
-  width: 1056px;
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+  margin-bottom: -20px;
+  z-index: 1;
 }
 
 .main-navigation li {
-  display: inline-block;
-  text-align: center;
-  vertical-align: center;
-  margin-right: 136px;
+  display:inline-block;
+  width: 20%;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  vertical-align: top;
+  padding: 16px 0;
 }
 
 .main-navigation a {
+  display: block;
   color: #000000;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 26px;
+}
+.main-navigation .sedona {
+  padding: 0;
 }
 
-.main-navigation li:last-child {
-  margin-right: 0;
+.main-navigation a:hover {
+  color: #81b3d2;
 }
 
-.banner {
-  margin: 0 auto ;
+.main-navigation a:active {
+  opacity: 0.3;
 }
-.about {
-  min-height: 2078px;
-  
+
+.main-navigation li:first-child {
+  text-align: left;
+}
+ .main-navigation li:last-child {
+  text-align: right;
+}
+
+.current {
+  color: #766357;
 }
 
 .information {
   width: 1200px;
-  min-height: 151px;  
-  outline: 1px solid #70c974;
+  padding-top: 63px; 
 }
+ 
+h2{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
 
+}
 .information h2 {
-   width: 440px;
+   width: 480px;
    margin: 0 auto;
-   padding: 63px 0 32px;
+   padding: 0 10px 31px;
    text-align: center;
    line-height: 26px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .information p {
-   width: 491px;
+   width: 520px;
    margin: 0 auto;
-   padding-bottom: 51px;
+   padding: 0 10px 51px;
    line-height: 26px;
    text-align: center;
 }
+
 .reason {
-  min-height: 256px;
-  outline: 1px solid #4281d7;
+   background: url("../img/town.jpg") no-repeat right;
 }
 
 .reason-description {
   width: 400px;
-  min-height: 256px;
-  outline: 1px solid #828fa0;
-  background-color: #81b3d2;
-  padding-top: 56px;
   float: left;
+  background-color: #81b3d2;
+  padding: 56px 0 20px;
 }
-/* в итоге у меня все равно вылет, хотя и картинка (по высоте 256px) и блок с информацией (по высоте 256px). почему??  */
-.town {
-  margin: 0;
-  float: right;
-}
-.reason-description h3 {
-  width: 175px;
-  color: #ffffff;
+
+h3{
   font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reason-description h3 {
+  width: 190px;
+  color: #ffffff;
   line-height: 21px;
   margin: 0 auto;
-  padding:0 10px 22px;
+  padding: 0 10px 25px;
   text-align: center;
 }
 
 .reason-description p {
-  width: 280px;
+  width: 360px;
   line-height: 21px;
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-  padding-bottom: 20px;
-
+  padding: 0 10px 25px;
 }
 
-.reason-description p:last-child {
-  padding-bottom: 0;
-}
-
-.features {
-  min-height: 330px;
+.features { 
    font-size: 0px;
-   text-align: center;
-}
+   margin: 0 auto;
+   }
 
 .features-information {
+  width: 400px;
   display: inline-block;
-  margin-right: 74px;
-  outline: 1px solid #76c73f;
+  text-align: center;
+  vertical-align: top;
 }
 
-.indent {
-  padding-top: 60px;
+.features-information span {
+   display: block;
+}
+.home {
+  margin: 54px auto 33px;
+  width: 75px;
+  height: 72px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -13px -15px;
+}
+
+.food {
+  margin: 56px auto 33px;
+  width: 74px;
+  height: 70px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -110px -17px ;
+}
+
+.present {
+  margin: 50px auto 33px;
+  width: 64px;
+  height: 76px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -213px -12px;
+}
+
+h4{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .features-information h4 {
-  width: 107px;
+  width: 122px;
   line-height: 21px;
   margin: 0 auto;
-  padding: 32px 10px 27px;
+  padding: 0 10px 28px;
 }
 
 .features-information p {
-  width: 292px;
+  width: 310px;
   line-height: 21px;
-  padding: 0 10px;
-}
-
-.features-information:last-child {
-  margin-right: 0;
+  margin: 0 auto;
+  padding: 0 10px 80px;
 }
 
 .around {
-  float: left;
+  background: url("../img/bridge.jpg") no-repeat left;
 } 
 
  .round {
@@ -173,36 +217,52 @@ body {
 }
 
 .two {
-  min-height: 256px;
   background-color: #eeeeee;
+  padding-top: 55px;
 }
 
 .features-information h3 {
   line-height: 21px;
-  margin: 51px 0 29px;
+  margin: 0 auto 26px;
+}
+
+.two .features-information p {
+  line-height: 21px;
+  margin: 0 auto 25px;
+  padding:0;
+}
+
+.two .features-information p:last-child {
+  margin-bottom: 66px;
 }
 
 .reservation-information {
- padding-top: 54px;
+ padding-top: 59px;
+}
+
+h5{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .reservation h5 {
   width: 338px;
-  margin: 0 auto 27px;
+  line-height: 30px;
+  margin: 0 auto 32px;
   padding: 0 10px;
   text-align: center;
 }
 
 .reservation p {
   width: 474px;
-  margin: 0 auto 42px;
+  margin: 0 auto 49px;
   line-height: 24px;
   text-align: center;
 }
 
 .reservation-search {
   width: 568px;
-  min-height: 481px;
   margin: 0 auto;
 }
 
@@ -216,6 +276,7 @@ body {
 .btn {
   color: #ffffff;
   font-size: 21px;
+  line-height: 26px;
   text-transform: uppercase;
   background-color: #766357;
 }
@@ -262,14 +323,13 @@ input[type="date"] {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #a9a9a9;
-
 }
-/* не срабатывает св-во ниже почему-то*/
+
 .search-man :last-child {
   margin-right: 0;
 }
+
 /* цвет букв не меняет на черный*/
 input[type="text"] {
   width: 114px;
@@ -298,42 +358,18 @@ input[type="submit"] {
   padding: 0;
 }
 
-p {
-  font-size: 14px;
-  font-weight: normal;
-  text-transform: uppercase;
-
-}
-
-h2{
-  font-size: 21px;
-  font-weight: bold;
-  text-transform: uppercase;
-
-}
-
-h3{
-  font-size: 21px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-h4{
-  font-size: 21px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-h5{
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
+.map {
+  background: url("../img/map.jpg") no-repeat center;
+  margin-bottom: - 120px;
 }
 
 .footer {
+  position: relative;
   width: 1200px;
   min-height: 120px;
   padding-top: 36px;
+  z-index: 1;
+  background: rgba(255,255,255,0.7);
 }
 
 .footer-hashtag {
@@ -355,31 +391,34 @@ h5{
   vertical-align: center;
 }
 
-.square {
+.social-btn {
+  display: inline-block;
   width: 46px;
   height: 48px;
-  background-color: #81b3d2;
-  display: inline-block;
-  text-align: center;
-  vertical-align: center;
+  font-size: 0;
+  vertical-align: middle;
+  background: #81b3d2 url("../img/sprites.png") no-repeat center;
 }
 
-.square a {
-  margin: 0 auto;
+.twitter {
+  background-position: -95px -100px;
 }
 
+.facebook {
+  background-position: -50px -102px ;
+ 
+}
 .footer-website {
-  float: right;
-  
+  display: inline-block;
+  vertical-align: middle;
+  width: 113px;
+  height: 39px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -170px -103px;
 }
-
 .footer-website span {
   font-size: 14px;
   text-transform: uppercase;
-
-  display: inline-block;
+  padding: 30px;
 }
 
-.footer-website img {
-  margin: 5px 103px 0 8px;
-}
