@@ -291,73 +291,153 @@ h5{
   z-index: 10;
   box-shadow: 0 3px 15px 1px #b0b0af;
 }
+ 
 
 
 .search-entry form {
+  position: relative;
   width: 458px;
   margin: 0 auto;
   padding: 55px 0 55px;
-
 }
 
-.search-entry label {
+.search-date {
+  position: relative;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 67px;
+}
+
+.search-date label {
+  position: absolute;
+  left: 0;
+  top: 4px;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-
-input[type="date"] {
+.search-date input[type="text"] {
+  position: absolute;
+  right: 0;
   width: 346px;
   min-height: 38px;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   border: 0;
   padding: 0;
-  margin-bottom: 29px;
+  color: #000000;
 }
 
-input[type="date"]:hover {
+input[type="text"]:hover {
   background-color: #ebebeb;
 }
 
-input[type="date"]:focus {
+input[type="text"]:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
- 
+
+.search-date::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 21px;
+  height: 22px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -310px -15px;
+  z-index: 10;
+}
+
+.search-date:hover::before {
+  width: 21px;
+  height: 22px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -363px -15px;
+}
+
+.search-date:active::before {
+  width: 21px;
+  height: 22px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -412px -15px;
+}
+
+
 .search-man {
-  font-size: 0px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: center;
-  margin: 0 45px 54px 0;
-}
-
-.search-man span {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #a9a9a9;
-}
-
-.search-man:last-child {
-  margin-right: 0;
-}
-
-/* цвет букв не меняет на черный*/
-input[type="text"] {
-  width: 114px;
-  min-width: 38px;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: #f2f2f2;
+  position: relative;
+  float: left;
+  width: 50%;
+  vertical-align: top;
+  font-size: 0;
   border: 0;
   padding: 0;
+  margin: 0;
+  margin-bottom: 92px;
 }
+
+.search-man label {
+  position: absolute;
+  top: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+/*слово дети никак не подравнять под макет. Как это сделать?*/
+.search-man>#children {
+  margin-left: 50px;
+}
+
+.amount {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+}
+ 
+.amount span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #a9a9a9;
+  width: 38px;
+  min-height: 38px;
+  cursor: pointer;
+}
+
+.amount span:hover {
+  color: #000000;
+}
+
+.amount span:active {
+  color: #81b3d2;
+}
+
+.amount input[type="text"] {
+  width: 38px;
+  min-height: 38px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2; 
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
 
 
 input[type="submit"] {
@@ -371,6 +451,7 @@ input[type="submit"] {
   line-height: 26px;
   border: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
@@ -439,7 +520,7 @@ input[type="submit"]:active {
 }
 
 .social-btn:active {
-  background: #5496bd url("../img/sprites.png") no-repeat center;
+  background: url("../img/sprites.png") no-repeat center;
 }
 
 .social-btn:last-child {
@@ -456,7 +537,6 @@ input[type="submit"]:active {
 
 .twitter:active {
   background-position: -2px -102px;
-  opacity: 0.3;
 }
 
 .facebook {
@@ -469,7 +549,6 @@ input[type="submit"]:active {
 
 .facebook:active {
   background-position: -50px -102px;
-  opacity: 0.3;
 }
 
 .youtube {
@@ -482,9 +561,8 @@ input[type="submit"]:active {
 
 .youtube:active {
   background-position: -300px -150px;
-  opacity: 0.3;
-}
-
+ }
+ 
 .footer-website {
   width: 400px;
   display: inline-block;
@@ -498,11 +576,14 @@ input[type="submit"]:active {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
-.academy {
+.footer-website .academy {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
+  margin-left: 9px;
   width: 113px;
   height: 39px;
   background: url("../img/sprites.png") no-repeat center;

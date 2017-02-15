@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     </head>
-        <body>
+      <body>
         <div class="container">
             <header class="main-header">
                     <nav class="main-navigation">
@@ -25,12 +25,12 @@
                                 <a href="#">Карта штата</a>
                             </li>
                             <li>
-                                <a class="current" href="#">Гостиницы</a>
+                                <a class="current" href="inner.html">Гостиницы</a>
                             </li>
                         </ul>
                     </nav>
             </header>
-            <main class="container">
+            <main>
                 <section class="choose">
                   	<form  action="#" method="get">
                         <fieldset class="choose-infrastructure">
@@ -69,15 +69,8 @@
                         </fieldset>
                         <fieldset class="choose-cost">
                              <legend>Стоимость в сутки (P):</legend>
-                             <!--В лекции говорится про поля input type="text"
-                              <input type="text" name="range" value="0" placeholder="0">
-                             -->
                              <div>от 0</div><span></span>
-                             <!--В лекции говорится про поля input type="text"
-                              <input type="text" name="range" value="3000" placeholder="3000">
-                             -->
                              <div>до 3000</div>
-                             <!--и про набор divов-->
                                 <input type="range" min="0" max="3000" step="1" value="2700"> 
                                 <button class="show" type="button">Показать</button> 
                         </fieldset>
@@ -158,19 +151,13 @@
                       <p>#VISITSEDONA</p>
                      </section>
                      <section class="footer-social">
-                       <div class="twitter square">
-                         <a href="#"><img src="img/twiter.png" width="17" height="15" alt="Твиттер"></a>
-                       </div>
-                       <div class="facebook square">
-                         <a href="#"><img src="img/facebook.png" width="10" height="19" alt="Facebook"></a>
-                       </div>
-                       <div class="youtube square">
-                         <a href="#"><img src="img/youtube.png" width="20" height="16" alt="Youtube"></a>
-                       </div>
+                         <a class="twitter social-btn" href="#"><img </a>
+                         <a class="facebook social-btn" href="#"></a>
+                         <a class="youtube social-btn" href="#"></a>
                      </section>
                      <section class="footer-website">
-                         <span>WebSite by</span>
-                        <img src="img/htmlacademy.png" width="113" height="39" alt="Htmlacademy">
+                          <span>WebSite by</span>
+                         <a class="academy" href="#"></a>
                      </section>
             </footer>
           </div>

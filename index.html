@@ -94,21 +94,29 @@
                         <button class="btn" type="button">Поиск гостиницы в Седоне</button>
                         <div class="search-entry">
                     	 <form action="" method="get">
-                            <label for="in">Дата заезда:</label>
-                    	    <input type="date" name="calendar" value="come" id="in">
-                            <label for="out">Дата выезда:</label>
-                    	    <input type="date" name="calendar" value="away" id="out">
-                            <fieldset class="search-man">
-                               <label for="growup">Взрослые</label>
-                               <span>-</span>
-                               <input type="text" placeholder="2" name="count" id="growup">
-                               <span>+</span>
+                            <fieldset class="search-date">
+                               <label for="in">Дата заезда:</label>
+                    	       <input type="text" placeholder="24 апреля 2017" name="calendar" id="in">
+                            </fieldset>
+                            <fieldset class="search-date">
+                               <label for="out">Дата выезда:</label>
+                    	       <input type="text" placeholder="4 июля 2017" name="calendar" id="out">
                             </fieldset>
                             <fieldset class="search-man">
+                               <label for="growup">Взрослые</label>
+                               <div class="amount">
+                                  <span>-</span>
+                                  <input type="text" placeholder="2" name="count" id="growup">
+                                  <span>+</span>
+                               </div>
+                            </fieldset>
+                            <fieldset class="search-man clearfix">
                                <label for="children">Дети</label>
-                               <span>-</span>
-                               <input type="text" placeholder="2" name="count" id="children">
-                               <span>+</span>
+                                <div class="amount">   
+                                   <span>-</span>
+                                   <input type="text" placeholder="2" name="count" id="children">
+                                   <span>+</span>
+                               </div>
                     	    </fieldset>
                             <input type="submit" value="Найти">
                     	 </form>
@@ -125,7 +133,7 @@
                       <p>#VISITSEDONA</p>
                      </section>
                      <section class="footer-social">
-                         <a class="twitter social-btn" href="#"></a>
+                         <a class="twitter social-btn" href="#"><img </a>
                          <a class="facebook social-btn" href="#"></a>
                          <a class="youtube social-btn" href="#"></a>
                      </section>
