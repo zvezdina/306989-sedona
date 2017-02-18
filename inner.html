@@ -18,7 +18,7 @@
                             <li>
                                 <a href="#">Фото и видео</a>
                             </li>
-                            <li>
+                            <li class="home-item">
                                 <a href="#"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
                             </li>
                             <li>
@@ -38,15 +38,15 @@
                                 <ul>
                                     <li>
                                        <input type="checkbox" name="infrastructure" value="Swimmingpool" id="Swim" checked> 
-                                       <label for="Swim">Бассейн</label>
+                                       <label for="Swim"><span>Бассейн</span></label>
                                     </li>
                                     <li>
-                                       <input type="checkbox" name="infrastructure" value="Parking" id="Parking">
-                                       <label for="Parking">Парковка</label>
+                                       <input type="checkbox" name="infrastructure" value="Parking" id="Parking" disabled>
+                                       <label for="Parking"><span>Парковка</span></label>
                                     </li>
                                     <li>
                                         <input type="checkbox" name="infrastructure" value="Wifi" id="Wifi">
-                                        <label for="Wifi">Wi-fi</label>
+                                        <label for="Wifi"><span>Wi-fi</span></label>
                                     </li>
                                 </ul>
                         </fieldset>
@@ -55,24 +55,27 @@
                                  <ul>
                                     <li>
                                        <input type="checkbox" name="house" value="Hotel" id="Hotel" checked>
-                                       <label for="Hotel">Гостиницы</label>
+                                       <label for="Hotel"><span>Гостиницы</span></label>
                                     </li>
                                     <li>
                                        <input type="checkbox" name="house" value="Motel" id="Motel" checked>
-                                       <label for="Motel">Мотель</label>
+                                       <label for="Motel"><span>Мотель</span</label>
                                      </li>
                                      <li>
-                                       <input type="checkbox" name="house" value="Apartments" id="Apartments" checked>
-                                      <label for="Apartments">Апартаменты</label>
+                                       <input type="checkbox" name="house" value="Apartments" id="Apartments" checked disabled>
+                                      <label for="Apartments"><span>Апартаменты</span></label>
                                      </li>
                                   </ul>
                         </fieldset>
                         <fieldset class="choose-cost">
                               <legend>Стоимость в сутки (P):</legend>
-                              <div class="begin">от 0</div>
-                              <span></span>
-                              <div class="end">до 3000</div>
-                              <input type="range" min="0" max="3000" step="1" value="2700"> 
+                              <div class="meaning"><span>от 0</span><b>i</b><span>до 3000</span></div>
+                              <div class="range">
+                                <div class="range-begin"> 
+                                </div>
+                                <div class="range-end"> 
+                                </div>
+                              </div>
                               <div>
                                 <input type="submit" value="Показать">
                               </div>
@@ -157,7 +160,7 @@
                      </section>
                      <section class="footer-website">
                           <span>WebSite by</span>
-                         <a class="academy" href="#"></a>
+                         <a class="academy" href="https://echo.htmlacademy.ru"></a>
                      </section>
             </footer>
           </div>
