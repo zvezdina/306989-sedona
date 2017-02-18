@@ -7,7 +7,6 @@ body {
   font-weight: normal;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
-  /* по дополнительному параметру 25 , сказали прописывать по максимуму в боди то, что одинаково для все страницы*/
   color:#000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -45,7 +44,7 @@ body {
 }
 
 .main-navigation li {
-  display:inline-block;
+  display: inline-block;
   width: 20%;
   font-size: 14px;
   line-height: 26px;
@@ -152,7 +151,7 @@ h3{
 .features { 
    font-size: 0px;
    margin: 0 auto;
-   }
+}
 
 .features-information {
   width: 400px;
@@ -165,12 +164,13 @@ h3{
 .features-information span {
    display: block;
 }
+
 .home {
   margin: 0 auto 33px;
   width: 75px;
   height: 72px;
   background: url("../img/sprites.png") no-repeat;
-  background-position: -13px -15px;
+  background-position: -207px -60px;
 }
 
 .food {
@@ -178,7 +178,7 @@ h3{
   width: 74px;
   height: 70px;
   background: url("../img/sprites.png") no-repeat;
-  background-position: -110px -17px ;
+  background-position: -109px -61px;
 }
 
 .present {
@@ -186,7 +186,7 @@ h3{
   width: 64px;
   height: 76px;
   background: url("../img/sprites.png") no-repeat;
-  background-position: -213px -12px;
+  background-position: -314px -64px;
 }
 
 h4{
@@ -219,7 +219,6 @@ h4{
 
 .two {
   background-color: #eeeeee;
-
 }
 
 .features-information h3 {
@@ -292,8 +291,6 @@ h5{
   box-shadow: 0 3px 15px 1px #b0b0af;
 }
  
-
-
 .search-entry form {
   position: relative;
   width: 458px;
@@ -307,13 +304,11 @@ h5{
   border: 0;
   margin: 0;
   padding: 0;
-  margin-bottom: 67px;
+  margin-bottom: 30px;
 }
 
 .search-date label {
-  position: absolute;
-  left: 0;
-  top: 4px;
+  width: 112px;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -321,14 +316,57 @@ h5{
 }
 
 .search-date input[type="text"] {
-  position: absolute;
-  right: 0;
-  width: 346px;
+  width: 360px;
   min-height: 38px;
   background: #f2f2f2;
   border: 0;
   padding: 0;
+  padding: 0 9px 0 14px;
+}
+
+input::-webkit-input-placeholder {
+ color: #000000;
+ opacity: 1;
+ font-size: 14px;
+ font-weight: bold;
+ line-height: 26px;
+ text-transform: uppercase;
+}
+
+input::-moz-placeholder {
+ color: #000000;
+ opacity: 1;
+ font-size: 14px;
+ font-weight: bold;
+ line-height: 26px;
+ text-transform: uppercase;
+}
+
+input:-moz-placeholder {
   color: #000000;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+input::-ms-placeholder {
+  color: #000000;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: #000000;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 input[type="text"]:hover {
@@ -344,11 +382,11 @@ input[type="text"]:focus {
   content: "";
   position: absolute;
   top: 8px;
-  right: 10px;
+  right: 11px;
   width: 21px;
   height: 22px;
   background: url("../img/sprites.png") no-repeat;
-  background-position: -310px -15px;
+  background-position: -13px -14px;
   z-index: 10;
 }
 
@@ -356,16 +394,15 @@ input[type="text"]:focus {
   width: 21px;
   height: 22px;
   background: url("../img/sprites.png") no-repeat;
-  background-position: -363px -15px;
+  background-position: -61px -15px;
 }
 
 .search-date:active::before {
   width: 21px;
   height: 22px;
   background: url("../img/sprites.png") no-repeat;
-  background-position: -412px -15px;
+  background-position: -110px -15px;
 }
-
 
 .search-man {
   position: relative;
@@ -376,12 +413,11 @@ input[type="text"]:focus {
   border: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 92px;
+  margin-bottom: 54px;
 }
 
 .search-man label {
-  position: absolute;
-  top: 5px;
+  width: 112px;
   display: inline-block;
   vertical-align: middle;
   text-align: left;
@@ -390,14 +426,12 @@ input[type="text"]:focus {
   font-weight: bold;
   color: #000000;
 }
-/*слово дети никак не подравнять под макет. Как это сделать?*/
-.search-man>#children {
-  margin-left: 50px;
+
+.search-man:last-of-type label {
+  padding-left: 50px;
 }
 
 .amount {
-  position: absolute;
-  right: 0;
   display: inline-block;
   vertical-align: middle;
   background-color: #f2f2f2;
@@ -438,8 +472,6 @@ input[type="text"]:focus {
   text-align: center;
 }
 
-
-
 input[type="submit"] {
   width: 458px;
   min-height: 58px;
@@ -468,6 +500,426 @@ input[type="submit"]:active {
   margin-bottom: -120px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.choose {
+  background: url("../img/blur.jpg") no-repeat center;
+}
+
+.choose-infrastructure {
+  border: 0;
+  padding: 0;
+  float: left;
+  color: #ffffff;
+  margin: 29px 0 0 73px;
+}
+
+.choose-infrastructure legend {
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+.choose-infrastructure ul {
+  border: 0;
+  padding: 0;
+  margin: 23px 0 32px 0;
+  list-style-type: none;
+
+}
+
+.choose-infrastructure li {
+  color: #ffffff;
+  padding-bottom: 26px;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+.choose-infrastructure li:last-child {
+  padding-bottom: 0;
+}
+
+.choose-house {
+  border: 0;
+  padding: 0;
+  float: left;
+  color: #ffffff;
+  margin: 29px 0 0 115px;
+}
+
+.choose-house ul {
+  border: 0;
+  padding: 0;
+  margin: 20px 0 30px 0;
+  list-style-type: none;
+}
+
+.choose-house li {
+  color: #ffffff;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+.choose-house li:last-child {
+  padding-bottom: 0;
+}
+
+.choose-cost {
+  border: 0;
+  padding: 0;
+  float: right;
+  margin: 29px 73px 0 0;
+  color: #ffffff;
+  width: 328px;
+}
+
+
+.choose-cost legend {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+.begin {
+  display: inline-block;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  margin: 11px 0 20px 0;
+  width: 160px;
+  min-height: 36px;
+  padding: 13px 0 0 67px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.end {
+  display: inline-block;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  margin: 11px 0 20px 0;
+  width: 160px;
+  min-height: 36px;
+  padding: 13px 52px 0 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.choose-cost span {
+  border-right: 2px solid #ffffff;
+}
+
+.choose-cost input [type="range"] {
+  display: block;
+  width: 138px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.choose-cost input[type="submit"] {
+  border: 2px solid #ffffff;
+   width: 137px;
+   min-height: 36px;
+  background-color: transparent;
+  margin-left: 85px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+.choose-cost input[type="submit"]:hover {
+ background-color: #ffffff;
+ color: #000000;
+}
+
+.result {
+  padding-top: 31px;
+}
+
+.result-options {
+  position: relative;
+  font-size: 0;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 31px;
+}
+
+.result-options h2 {
+  display: inline-block;
+  line-height: 26px;
+  margin: 0;
+  margin: 0 50px 0 73px;
+  vertical-align: top;
+
+}
+
+.result-options p {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: middle;
+  margin: 0;
+  
+}
+
+.result-sorting {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 41px;
+  vertical-align: middle;
+}
+
+.result-sorting li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+  padding-right: 34px;
+  vertical-align: middle;
+}
+
+.result-sorting a {
+  color: #b2b2b2;
+  border-bottom: 1px dotted #81b3d2;
+  text-decoration: none;
+}
+
+.result-sorting .active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.result-sorting a:hover {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+  text-decoration: none;
+}
+
+.result-sorting a:active {
+  color: #000000;
+  border-bottom: 0;
+}
+
+.result-options .up::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 97px;
+  width: 11px;
+  height: 10px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -368px -268px;
+  z-index: 10;
+}
+
+.result-options .down::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 73px;
+  width: 11px;
+  height: 10px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -367px -19px;
+  z-index: 10;
+}
+
+.result-options .up:hover::before  {
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -321px -267px;
+}
+
+.result-options .down:hover::before  {
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -315px -17px;
+}
+
+.result-options .up:active::before  {
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -269px -268px;
+}
+
+.result-options .down:active::before  {
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -267px -16px;
+}
+
+.search-item {
+  position: relative;
+  margin-top: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 0;
+}
+
+.search-item figure {
+  display: inline-block;
+  margin: 0 30px 31px 73px;
+  vertical-align: top;
+}
+
+.description {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.description h2 {
+  margin: -3px 0 10px 0;
+  line-height: 26px;
+}
+
+.description h2:hover {
+ color: #81b3d2;
+ cursor: pointer;
+}
+
+.description h2:active {
+ color: #cacaca;
+ cursor: pointer;
+}
+
+.description p {
+  display: inline-block;
+  line-height: 21px;
+  margin: 0 40px 10px 0;
+  padding:0;
+  vertical-align: middle;
+}
+
+.description span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.push {
+  font-size: 0;
+}
+
+.push .more-btn {
+  display: inline-block;
+  background-color: #81b3d2;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  width: 110px;
+  height: 27px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.push .book-btn {
+  display: inline-block;
+  background-color: #766357;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  width: 142px;
+  height: 27px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+
+.push .more-btn:hover {
+  background-color: #669ec0;
+}
+
+ .push .book-btn:hover {
+  background-color: #604e43;
+} 
+
+.push .more-btn:active {
+   background-color: #5496bd;
+   color: #88b6d1;
+}
+
+.push .book-btn:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
+.amara::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 73px;
+  width: 89px;
+  height: 17px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -6px -66px;
+  z-index: 10;
+}
+
+.desert::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 73px;
+  width: 65px;
+  height: 17px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -15px -111px;
+  z-index: 10;
+}
+
+.villas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 73px;
+  width: 42px;
+  height: 17px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -28px -162px;
+  z-index: 10;
+}
+ 
+ .estimate {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: #f2f2f2;
+  right: 73px;
+  bottom: 31px;
+  width: 110px;
+  min-height: 27px;
+  color: #000000;
+ }
+
+
+
+
+
+
+
+ 
+
+
 .footer {
   position: relative;
   width: 1200px;
@@ -492,7 +944,6 @@ input[type="submit"]:active {
   text-transform: uppercase;
   line-height: 26px;
   margin: 0;
-
 }
 
 .footer-social {
@@ -502,7 +953,7 @@ input[type="submit"]:active {
   vertical-align: middle;
   text-align: center;
   padding-top: 36px;
-  }
+}
 
 .social-btn {
   display: inline-block;
@@ -520,7 +971,7 @@ input[type="submit"]:active {
 }
 
 .social-btn:active {
-  background: url("../img/sprites.png") no-repeat center;
+  background: #5496bd url("../img/sprites.png") no-repeat center;
 }
 
 .social-btn:last-child {
@@ -528,39 +979,39 @@ input[type="submit"]:active {
 }
 
 .twitter {
-  background-position: -2px -102px;
+  background-position: -402px -52px;
 }
 
 .twitter:hover {
-  background-position: -2px -102px;
+  background-position: -402px -52px;
 }
 
 .twitter:active {
-  background-position: -2px -102px;
+  background-position: -449px -49px;
 }
 
 .facebook {
-  background-position: -50px -102px;
+  background-position: -397px -4px;
 }
 
 .facebook:hover {
-  background-position: -50px -102px;
+  background-position: -397px -4px;
 }
 
 .facebook:active {
-  background-position: -50px -102px;
+  background-position: -449px -3px;
 }
 
 .youtube {
-  background-position: -300px -150px;
+  background-position: -402px -101px;
 }
 
 .youtube:hover {
-  background-position: -300px -150px;
+  background-position: -402px -101px;
 }
 
 .youtube:active {
-  background-position: -300px -150px;
+  background-position: -454px -102px;
  }
  
 .footer-website {
@@ -587,19 +1038,19 @@ input[type="submit"]:active {
   width: 113px;
   height: 39px;
   background: url("../img/sprites.png") no-repeat center;
-  background-position: -170px -103px;
+  background-position: -113px -156px;
 }
 
 .academy:hover {
   width: 113px;
   height: 39px;
   background: url("../img/sprites.png") no-repeat center;
-  background-position: -167px -155px ;
+  background-position: -112px -206px;
 }
 
 .academy:active {
   width: 113px;
   height: 39px;
   background: url("../img/sprites.png") no-repeat center;
-  background-position: -165px -208px ;
+  background-position: -114px -254px;
 }

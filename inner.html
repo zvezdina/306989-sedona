@@ -31,7 +31,7 @@
                     </nav>
             </header>
             <main>
-                <section class="choose">
+                <section class="choose clearfix">
                   	<form  action="#" method="get">
                         <fieldset class="choose-infrastructure">
                              <legend>Инфраструктура</legend>
@@ -68,80 +68,80 @@
                                   </ul>
                         </fieldset>
                         <fieldset class="choose-cost">
-                             <legend>Стоимость в сутки (P):</legend>
-                             <div>от 0</div><span></span>
-                             <div>до 3000</div>
-                                <input type="range" min="0" max="3000" step="1" value="2700"> 
-                                <button class="show" type="button">Показать</button> 
-                        </fieldset>
+                              <legend>Стоимость в сутки (P):</legend>
+                              <div class="begin">от 0</div>
+                              <span></span>
+                              <div class="end">до 3000</div>
+                              <input type="range" min="0" max="3000" step="1" value="2700"> 
+                              <div>
+                                <input type="submit" value="Показать">
+                              </div>
+                        </fieldset>              
                     </form>
                 </section>
                 <section class="result">
-                    <div class="result-options">  
+                     <div class="result-options">  
                        <h2>Найдено: 3</h2>
                        <p>Сортировка:</p>
                        <ul class="result-sorting">
-                          <li><a class="price" href="#">по цене</a></li>
+                          <li><a class="active" class="price" href="#">по цене</a></li>
                 	        <li><a class="type" href="#">по типу</a></li>
                 	        <li><a class="rating" href="#">по рейтингу</a></li>
                 	     </ul>
-                	   <a href="#"><img src="img/up-gray.png" width="11" height="10" alt="up"></a>
-                	   <a href="#"><img src="img/down-gray.png" width="11" height="10" alt="down"></a>
-                	</div>
+                	   <a  class="up" href="#"></a>
+                	   <a class="down" href="#"></a>
+                	  </div>
                     <div class="result-examples">
-                       <div class="search-item"> 
+                       <div class="search-item amara"> 
                           <figure class="hotel">
                              <img src="img/amara.jpg" width="135" height="90" alt="Amara">
                           </figure>
                           <div class="description">
                              <h2>Amara resort & spa</h2>
                              <p>Гостиница</p>
-                             <span>от 3500 р.</span>
+                             <span>от 4000 р.</span>
+                             <div class="push">
+                               <a class="more-btn" href="#">Подробнее</a>
+                               <a class="book-btn" href="#">Забронировать</a>
+                             </div>
                           </div>
-                          <a class="more-btn" href="#">Подробнее</a>
-                          <a class="book-btn" href="#">Забронировать</a>
-                          <div class="stars">
-                             <img src="img/fourstars.png" width="89" height="17" alt="stars">
-                          </div>
-                          <div class="estimate">
+                          <span class="estimate">
                           	  Рейтинг: 8,5
-                          </div>
+                          </span>
                        </div>
-                       <div class="search-item">
+                       <div class="search-item desert">
                           <figure class="hotel">
                              <img src="img/desert.jpg" width="135" height="90" alt="Desert">
                           </figure>
                           <div class="description">
                              <h2>Desert quail inn</h2>
                              <p>Мотель</p>
-                             <span>от 2000 р.</span>
-                          </div>   
-                          <a class="more-btn" href="#">Подробнее</a>
-                          <a class="book-btn" href="#">Забронировать</a>
-                          <div class="stars">
-                             <img src="img/threestars.png" width="65" height="17" alt="stars">
+                             <span>от 3000 р.</span>
+                             <div class="push">   
+                               <a class="more-btn" href="#">Подробнее</a>
+                               <a class="book-btn" href="#">Забронировать</a>
+                             </div>
                           </div>
-                          <div class="estimate">
+                          <span class="estimate">
                           	  Рейтинг: 8,9
-                          </div>
+                          </span>
                         </div>
-                       <div class="search-item">
+                       <div class="search-item villas">
                           <figure class="hotel">
                              <img src="img/villas.jpg" width="135" height="90" alt="Villas">
                           </figure>
                           <div class="description">
-                             <h2>Desert quail inn</h2>
+                             <h2>Villas at poco diablo</h2>
                              <p>Мотель</p>
-                             <span>от 2000 р.</span>
-                          </div>  
-                          <a class="more-btn" href="#">Подробнее</a>
-                          <a class="book-btn" href="#">Забронировать</a>
-                          <div class="stars">
-                             <img src="img/twostars.png" width="42" height="17" alt="stars">
+                             <span>от 2000 р.</span> 
+                             <div class="push"> 
+                               <a class="more-btn" href="#">Подробнее</a>
+                               <a class="book-btn" href="#">Забронировать</a>
+                             </div> 
                           </div>
-                          <div class="estimate">
-                          	  Рейтинг:  8,9
-                          </div>
+                          <span class="estimate">
+                          	  Рейтинг: 9,2
+                          </span>
                        </div>
                     </div>
                 </section>
