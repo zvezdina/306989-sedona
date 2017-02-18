@@ -93,14 +93,14 @@
                      <div class="reservation-search">
                         <a class="btn" href="/search.html">Поиск гостиницы в Седоне</a>
                         <div class="search-entry">
-                    	 <form action="" method="get">
+                    	 <form action="https://echo.htmlacademy.ru" method="get">
                             <fieldset class="search-date">
                                <label for="in">Дата заезда:</label>
-                    	       <input type="text" placeholder="24 апреля 2017" name="calendar" id="in">
+                    	       <input type="text" placeholder="24 апреля 2017" name="calendar-in" id="in">
                             </fieldset>
                             <fieldset class="search-date">
                                <label for="out">Дата выезда:</label>
-                    	       <input type="text" placeholder="4 июля 2017" name="calendar" id="out">
+                    	       <input type="text" placeholder="4 июля 2017" name="calendar-out" id="out">
                             </fieldset>
                             <fieldset class="search-man">
                                <label for="growup">Взрослые</label>
@@ -114,7 +114,7 @@
                                <label for="children">Дети</label>
                                 <div class="amount">   
                                    <span>-</span>
-                                   <input type="text" placeholder="2" name="count" id="children">
+                                   <input type="text" placeholder="2" name="count-children" id="children">
                                    <span>+</span>
                                </div>
                     	    </fieldset>
@@ -125,7 +125,7 @@
                   </div>
                 </section>
                 <section class="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=qliVaKmW7gPIW-zLP3ow55cF83U2W939&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=qliVaKmW7gPIW-zLP3ow55cF83U2W939&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
                 </section>
              </main>
              <footer class="footer">
@@ -143,5 +143,14 @@
                      </section>
             </footer>
           </div>
+          <script>
+           var lookUp = document.querySelector(".btn");
+           var popup = document.querySelector(".search-entry");
+
+           lookUp.addEventListener("click", function(event) {
+              event.preventDefault();
+              popup.classList.toggle("search-entry-show");
+           });
+          </script>
         </body>
 </html>

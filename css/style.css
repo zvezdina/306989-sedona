@@ -286,11 +286,16 @@ h5{
 }
 
 .search-entry {
+  display: none;
   position: absolute;
   background: #ffffff;
   width: 568px;
   z-index: 10;
   box-shadow: 0 3px 15px 1px #b0b0af;
+}
+
+.search-entry-show {
+  display: block;
 }
  
 .search-entry form {
@@ -472,6 +477,8 @@ input[type="text"]:focus {
   font-weight: bold;
   color: #000000;
   text-align: center;
+  vertical-align: middle;
+  padding: 4px 0;
 }
 
 input[type="submit"] {
@@ -500,18 +507,8 @@ input[type="submit"]:active {
 .map {
   background: url("../img/map.jpg") no-repeat center;
   margin-bottom: -120px;
+  height: 593px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .choose {
   background: url("../img/blur.jpg") no-repeat center;
@@ -1063,15 +1060,6 @@ input[type="checkbox"] {
   min-height: 27px;
   color: #000000;
  }
-
-
-
-
-
-
-
- 
-
 
 .footer {
   position: relative;
