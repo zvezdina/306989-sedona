@@ -294,8 +294,17 @@ h5{
   box-shadow: 0 3px 15px 1px #b0b0af;
 }
 
+
+@keyframes cartoon {
+  0% { transform: translateY(-100px); }
+  70% { transform: translateY(25px); }
+  90% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
 .search-entry-show {
   display: block;
+  animation: cartoon 0.9s;
 }
  
 .search-entry form {
@@ -383,6 +392,7 @@ input[type="text"]:hover {
 input[type="text"]:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  outline: none;
 }
 
 .search-date::before {
@@ -453,7 +463,6 @@ input[type="text"]:focus {
   font-weight: bold;
   color: #a9a9a9;
   width: 38px;
-  min-height: 38px;
   cursor: pointer;
 }
 
@@ -502,6 +511,16 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
   background-color: #5496bd;
   color: #94b9d2;
+}
+
+@keyframes joggle {
+0%, 100% { transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
+20%, 40%, 60%, 80% { transform: translateX(15px); }
+}
+
+.entry-error {
+animation: joggle 0.8s;
 }
 
 .map {

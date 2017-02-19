@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     </head>
         <body>
           <div class="container">
@@ -103,10 +103,10 @@
                     	       <input type="text" placeholder="4 июля 2017" name="calendar-out" id="out">
                             </fieldset>
                             <fieldset class="search-man">
-                               <label for="growup">Взрослые</label>
+                               <label for="grownup">Взрослые</label>
                                <div class="amount">
                                   <span>-</span>
-                                  <input type="text" placeholder="2" name="count" id="growup">
+                                  <input type="text" placeholder="2" name="count" id="grownup">
                                   <span>+</span>
                                </div>
                             </fieldset>
@@ -143,14 +143,6 @@
                      </section>
             </footer>
           </div>
-          <script>
-           var lookUp = document.querySelector(".btn");
-           var popup = document.querySelector(".search-entry");
-
-           lookUp.addEventListener("click", function(event) {
-              event.preventDefault();
-              popup.classList.toggle("search-entry-show");
-           });
-          </script>
+          <script src="js/scripts.min.js"></script>
         </body>
 </html>
