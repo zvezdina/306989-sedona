@@ -1,5 +1,5 @@
 *,  *::before, *::after { 
-	box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 
 body {
@@ -295,16 +295,25 @@ h5{
 }
 
 
+@-webkit-keyframes cartoon {
+  0% { -webkit-transform: translateY(-100px); transform: translateY(-100px); }
+  70% { -webkit-transform: translateY(25px); transform: translateY(25px); }
+  90% { -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+
 @keyframes cartoon {
-  0% { transform: translateY(-100px); }
-  70% { transform: translateY(25px); }
-  90% { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
+  0% { -webkit-transform: translateY(-100px); transform: translateY(-100px); }
+  70% { -webkit-transform: translateY(25px); transform: translateY(25px); }
+  90% { -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); }
 }
 
 .search-entry-show {
   display: block;
-  animation: cartoon 0.9s;
+  -webkit-animation: cartoon 0.9s;
+          animation: cartoon 0.9s;
 }
  
 .search-entry form {
@@ -368,6 +377,33 @@ input:-moz-placeholder {
 }
 
 input::-ms-placeholder {
+  color: #000000;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+input:-ms-input-placeholder {
   color: #000000;
   opacity: 1;
   font-size: 14px;
@@ -513,14 +549,21 @@ input[type="submit"]:active {
   color: #94b9d2;
 }
 
+@-webkit-keyframes joggle {
+0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-15px); transform: translateX(-15px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(15px); transform: translateX(15px); }
+}
+
 @keyframes joggle {
-0%, 100% { transform: translateX(0); }
-10%, 30%, 50%, 70%, 90% { transform: translateX(-15px); }
-20%, 40%, 60%, 80% { transform: translateX(15px); }
+0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-15px); transform: translateX(-15px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(15px); transform: translateX(15px); }
 }
 
 .entry-error {
-animation: joggle 0.8s;
+-webkit-animation: joggle 0.8s;
+        animation: joggle 0.8s;
 }
 
 .map {

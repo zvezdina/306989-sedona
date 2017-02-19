@@ -47,28 +47,17 @@ var storageChild = localStorage.getItem("child");
        });
 
    form.addEventListener("submit", function(event) {
-      if (!fieldIn.value) {
-            event.preventDefault();
-            popup.classList.add("entry-error");
-                } else { 
-            popup.classList.remove("entry-error");
-      if (!fieldOut.value) {
+      if (!fieldIn.value || !fieldOut.value  || !adults.value) {
             event.preventDefault();
             popup.classList.remove("entry-error");
-            popup.classList.add("entry-error");
-             } else { 
-             popup.classList.remove("entry-error"); 
-                if (!adults.value) {
-            event.preventDefault();
-            popup.classList.add("entry-error");
+            popup.offsetWidth = popup.offsetWidth;
+             popup.classList.add("entry-error");
              } else { 
                 localStorage.setItem("fieldIn", fieldIn.value);
                 localStorage.setItem("fieldOut", fieldOut.value);
                 localStorage.setItem("adults", adults.value);
                 localStorage.setItem("child", child.value);
              }
-          }
-        }
     });
 
             
