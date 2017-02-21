@@ -32,7 +32,7 @@ body {
   padding: 0; 
   list-style: none;
   font-size: 0;
-  margin-bottom: -20px;
+  margin-bottom: -22px;
   z-index: 1;
 }
 .main-navigation li {
@@ -66,7 +66,7 @@ body {
 }
 .information {
   width: 1200px;
-  padding-top: 63px; 
+  padding-top: 53px; 
 }
  
 .information h2 {
@@ -75,7 +75,7 @@ body {
   text-transform: uppercase;
   width: 480px;
   margin: 0 auto;
-  padding: 0 10px 31px;
+  padding: 0 10px 27px;
   text-align: center;
   line-height: 26px;
 }
@@ -96,29 +96,29 @@ body {
   width: 400px;
   float: left;
   background-color: #81b3d2;
-  padding: 56px 0 20px;
+  padding: 54px 0 31px;
 }
 .reason-description h3 {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   width: 190px;
   color: #ffffff;
   line-height: 21px;
   margin: 0 auto;
-  padding: 0 10px 25px;
+  padding: 0 10px 24px;
   text-align: center;
 }
 .reason-description p {
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
-  width: 360px;
+  width: 330px;
   line-height: 21px;
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-  padding: 0 10px 25px;
+  padding: 0 10px 21px;
 }
 .features { 
   position: relative;
@@ -130,12 +130,12 @@ body {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  padding-top: 50px;
+  margin-top: 55px;
 }
 .features .house::before {
   content: "";
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 162px;
   width: 75px;
   height: 72px;
@@ -146,7 +146,7 @@ body {
 .features .food::before {
   content: "";
   position: absolute;
-  top: 50px;
+  top: 61px;
   left: 563px;
   width: 74px;
   height: 70px;
@@ -157,7 +157,7 @@ body {
 .features .present::before {
   content: "";
   position: absolute;
-  top: 50px;
+  top: 56px;
   right: 168px;
   width: 64px;
   height: 76px;
@@ -172,7 +172,7 @@ body {
   width: 122px;
   line-height: 21px;
   margin: 0 auto;
-  padding: 105px 10px 28px;
+  padding: 106px 10px 24px;
 }
 .features-information p {
   font-size: 14px;
@@ -181,16 +181,24 @@ body {
   width: 310px;
   line-height: 21px;
   margin: 0 auto;
-  padding: 0 10px 80px;
+  padding: 0 10px 82px;
 }
 .around {
   background: #f1c3ac url("../img/bridge.jpg") no-repeat left;
 } 
  .round {
+  padding: 51px 0 29px;
   float: right;
+}
+.round h3 {
+  padding-bottom: 25px;
+  margin-top: 4px;
 }
 .two {
   background-color: #eeeeee;
+}
+.two .features-information{
+  margin-top: 46px;
 }
 .features-information h3 {
   font-size: 21px;
@@ -201,18 +209,19 @@ body {
   margin: 0 auto 24px;
 }
 .two p {
+  width: 265px;
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
   line-height: 21px;
-  margin: 0 auto 24px;
+  margin: 0 auto 21px;
   padding:0;
 }
 .two p:last-child {
-  margin-bottom: 53px;
+  margin-bottom: 60px;
 }
 .reservation-information {
-  padding-top: 58px;
+  padding-top: 53px;
 }
 .reservation h5 {
   font-size: 30px;
@@ -220,7 +229,7 @@ body {
   text-transform: uppercase;
   width: 338px;
   line-height: 30px;
-  margin: 0 auto 33px;
+  margin: 0 auto 27px;
   padding: 0 10px;
   text-align: center;
 }
@@ -229,7 +238,7 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   width: 474px;
-  margin: 0 auto 49px;
+  margin: 0 auto 47px;
   line-height: 24px;
   text-align: center;
 }
@@ -249,7 +258,7 @@ body {
   font-size: 21px;
   font-weight: bolder;
   background-color: #766357;
-  padding-top: 33px;
+  padding-top: 30px;
   border-width: 0;
 }
 .search-entry {
@@ -299,13 +308,16 @@ body {
   text-transform: uppercase;
 }
 .search-date input[type="text"] {
-  width: 360px;
+  width: 345px;
   min-height: 38px;
   background: #f2f2f2;
   border: 0;
-  padding: 0;
-  padding: 0 9px 0 14px;
+  padding: 0 9px 0 13px;
+  margin-left: 17px;
   border: 2px solid transparent;
+}
+.search-date input[id="in"] {
+  margin-left: 21px;
 }
 input::-webkit-input-placeholder {
   color: #000000;
@@ -383,7 +395,7 @@ input[type="text"]:focus {
   content: "";
   position: absolute;
   top: 8px;
-  right: 11px;
+  right: 10px;
   width: 21px;
   height: 22px;
   background: url("../img/sprites.png") no-repeat;
@@ -442,8 +454,8 @@ input[type="text"]:focus {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 26px;
+  line-height: 26px;
   font-weight: bold;
   color: #a9a9a9;
   width: 38px;
@@ -532,7 +544,7 @@ input[type="submit"]:active {
   padding: 0;
   float: left;
   color: #ffffff;
-  margin: 29px 0 0 73px;
+  margin: 27px 0 0 73px;
 }
 .choose-infrastructure legend {
   font-size: 16px;
@@ -544,13 +556,12 @@ input[type="submit"]:active {
   position: relative;
   border: 0;
   padding: 0;
-  margin: 23px 0 32px 0;
+  margin: 23px 0 31px 0;
   list-style-type: none;
 }
 .choose-infrastructure li {
-
   color: #ffffff;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
@@ -570,18 +581,7 @@ input[type="checkbox"] {
   background: url("../img/sprites.png") no-repeat;
   background-position: -165px -163px;
 }
-.choose-house label::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background: url("../img/sprites.png") no-repeat;
-  background-position: -165px -163px;
-}
 .choose-infrastructure span {
-  padding-left: 39px;
-}
-.choose-house span {
   padding-left: 39px;
 }
 .choose-infrastructure input:checked + label::before {
@@ -608,6 +608,47 @@ input[type="checkbox"] {
   background: url("../img/sprites.png") no-repeat;
   background-position: -209px -10px;
 }
+.choose-house {
+  border: 0;
+  padding: 0;
+  float: left;
+  color: #ffffff;
+  margin: 27px 0 0 120px;
+}
+.choose-house legend {
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+.choose-house ul {
+  border: 0;
+  padding: 0;
+  margin: 24px 0 31px 0;
+  list-style-type: none;
+}
+.choose-house li {
+  color: #ffffff;
+  padding-bottom: 25px;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+.choose-house li:last-child {
+  padding-bottom: 0;
+}
+.choose-house label::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: url("../img/sprites.png") no-repeat;
+  background-position: -165px -163px;
+}
+.choose-house span {
+  padding-left: 42px;
+}
 .choose-house input:checked + label::before {
   content: "";
   position: absolute;
@@ -632,43 +673,13 @@ input[type="checkbox"] {
   background: url("../img/sprites.png") no-repeat;
   background-position: -209px -10px;
 }
-.choose-house {
-  border: 0;
-  padding: 0;
-  float: left;
-  color: #ffffff;
-  margin: 29px 0 0 115px;
-}
-.choose-house legend {
-  font-size: 16px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  line-height: 21px;
-}
-.choose-house ul {
-  border: 0;
-  padding: 0;
-  margin: 20px 0 30px 0;
-  list-style-type: none;
-}
-.choose-house li {
-  color: #ffffff;
-  padding-bottom: 25px;
-  font-size: 14px;
-  font-weight: normal;
-  text-transform: uppercase;
-  line-height: 21px;
-}
-.choose-house li:last-child {
-  padding-bottom: 0;
-}
 .choose-cost {
   border: 0;
   padding: 0;
   float: right;
-  margin: 29px 73px 0 0;
+  margin: 26px 65px 0 0;
   color: #ffffff;
-  width: 328px;
+  width: 335px;
 }
 .choose-cost legend {
   color: #ffffff;
@@ -684,16 +695,20 @@ input[type="checkbox"] {
   min-height: 36px;
   vertical-align: middle;
   text-align: center;
-  margin-top: 11px;
+  margin: 11px 0 0 10px;
+  font-size: 0;
 }
 .meaning span {
   display: inline-block;
-  width: 119px;
-  margin: 0 auto;
+  width: 155px;
   font-size: 14px;
   font-weight: normal;
   vertical-align: middle;
   text-align: center;
+  padding-top: 1px;
+}
+.meaning span:last-child {
+  margin-right: 0;
 }
 .meaning b {
   display: inline-block;
@@ -704,7 +719,7 @@ input[type="checkbox"] {
 }
 .choose-cost .range {
   position: relative;
-  margin: 12px 0 12px 0;
+  margin: 8px 0 19px 10px;
   min-height: 2px;
   font-size: 0;
   padding-left: 10px;
@@ -772,7 +787,7 @@ input[type="checkbox"] {
   width: 137px;
   min-height: 36px;
   background-color: transparent;
-  margin-left: 85px;
+  margin-left: 95px;
   padding: 0;
   font-size: 14px;
   font-weight: normal;
@@ -790,7 +805,7 @@ input[type="checkbox"] {
   position: relative;
   font-size: 0;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 31px;
+  padding-bottom: 29px;
 }
 .result-options h2 {
   font-size: 21px;
@@ -799,7 +814,7 @@ input[type="checkbox"] {
   display: inline-block;
   line-height: 26px;
   margin: 0;
-  margin: 0 50px 0 73px;
+  margin: 0 48px 0 73px;
   vertical-align: top;
 }
 .result-options p {
@@ -814,14 +829,14 @@ input[type="checkbox"] {
 .result-sorting {
   display: inline-block;
   list-style-type: none;
-  padding-left: 41px;
+  padding-left: 39px;
   vertical-align: middle;
 }
 .result-sorting li {
   display: inline-block;
   font-size: 12px;
   line-height: 18px;
-  padding-right: 34px;
+  padding-right: 33px;
   vertical-align: middle;
 }
 .result-sorting a {
@@ -845,7 +860,7 @@ input[type="checkbox"] {
 .result-options .up::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 9px;
   right: 97px;
   width: 11px;
   height: 10px;
@@ -856,7 +871,7 @@ input[type="checkbox"] {
 .result-options .down::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: 73px;
   width: 11px;
   height: 10px;
@@ -882,26 +897,26 @@ input[type="checkbox"] {
 }
 .search-item {
   position: relative;
-  margin-top: 30px;
+  margin-top: 29px;
   border-bottom: 1px solid #e5e5e5;
   font-size: 0;
 }
 .search-item figure {
   display: inline-block;
-  margin: 0 30px 31px 73px;
+  margin: 0 30px 18px 73px;
   vertical-align: top;
 }
 .description {
   display: inline-block;
   vertical-align: top;
   max-width: 750px;
-  padding-bottom: 44px;
+  padding-bottom: 20px;
 }
 .description h2 {
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: -3px 0 10px 0;
+  margin: -3px 0 7px 0;
   line-height: 26px;
 }
 .description h2:hover {
@@ -915,11 +930,12 @@ input[type="checkbox"] {
 .description p {
   display: inline-block;
   font-size: 14px;
+  width: 116px;
   font-weight: normal;
   text-transform: uppercase;
   line-height: 21px;
-  margin: 0 40px 10px 0;
-  padding:0;
+  margin: 0 0 13px 0;
+  padding: 0;
   vertical-align: middle;
 }
 .description span {
@@ -951,7 +967,7 @@ input[type="checkbox"] {
   line-height: 21px;
   text-decoration: none;
   color: #ffffff;
-  padding: 3px 17px 3px;
+  padding: 3px 16px 3px;
   vertical-align: middle;
   text-align: center;
   font-weight: bold;
@@ -959,7 +975,7 @@ input[type="checkbox"] {
 .push .more-btn:hover {
   background-color: #669ec0;
 }
- .push .book-btn:hover {
+.push .book-btn:hover {
   background-color: #604e43;
 } 
 .push .more-btn:active {
@@ -1011,8 +1027,8 @@ input[type="checkbox"] {
   font-size: 14px;
   font-weight: normal;
   background-color: #f2f2f2;
-  right: 73px;
-  bottom: 31px;
+  right: 71px;
+  bottom: 30px;
   width: 110px;
   min-height: 27px;
   color: #000000;
@@ -1031,7 +1047,7 @@ input[type="checkbox"] {
   vertical-align: middle;
   text-align: center; 
   font-size:0;
-  padding-top: 48px;
+  padding-top: 37px;
 }
 .footer-hashtag p {
   font-size: 21px;
@@ -1100,7 +1116,7 @@ input[type="checkbox"] {
   font-size: 0;
   text-align: center;
   vertical-align: middle;
-  padding-top: 41px;
+  padding-top: 40px;
 }
 .footer-website span {
   font-size: 14px;
@@ -1112,7 +1128,7 @@ input[type="checkbox"] {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  margin-left: 9px;
+  margin-left: 7px;
   width: 113px;
   height: 39px;
   background: url("../img/sprites.png") no-repeat center;
